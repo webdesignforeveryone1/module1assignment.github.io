@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/module1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./Assignment_files/module1.css">
+</head>
+<body>
+    <h1>Our Menu</h1>
+
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/module1.html#">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/module1.html#">Contact</a></li>
+            <li><a href="http://127.0.0.1:5500/module1.html#">About Us</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="menu title Chicken">Chicken
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Delectus debitis neque nesciunt velit mollitia iusto modi,
+                  reiciendis eveniet aut quibusdam necessitatibus! Reiciendis reprehenderit quos nostrum, praesentium ex quo! Ea,
+                   accusamus iure corrupti unde illo beatae eum quia deleniti, excepturi consectetur exercitationem!
+                    Repellat molestias dicta accusantium illo distinctio tenetur cum error.</p>
+                    </div>
+
+
+
+
+            <div class="menu title Beef">Beef
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Doloremque exercitationem dolor voluptate obcaecati, quae repellat rem unde ex,
+                  laboriosam iure iusto voluptatem porro excepturi ducimus dolorem minus qui aut!
+                   Repellat aspernatur hic animi nesciunt? Expedita sit eius dolorum eos voluptate odit maiores voluptatum ex magnam,
+                    molestias animi aliquid deleniti quis!</p>
+                    </div>
+
+
+
+            <div class="menu title Sushi">Sushi
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptatibus magni error, commodi et repellendus libero similique assumenda natus odit at nam nihil quos omnis rem animi quasi molestiae?
+                  Magni esse, quas repudiandae quam voluptatibus quaerat obcaecati doloremque ad perferendis dolores modi reprehenderit,
+                   iste veritatis dolor vitae itaque ducimus, sint error!</p>
+                   </div>
+
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
